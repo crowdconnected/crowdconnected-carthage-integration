@@ -1,0 +1,4 @@
+github "aws-amplify/aws-sdk-ios"
+binary "https://cdn.filesend.jp/private/-nKfp_Koo2D6_mWzCneM3x-FljLWE5Izk9EkEYYU_ZM_bLR3fo4MjrKYryWtWwMv/crowdconnected-core-sources"
+binary "https://cdn.filesend.jp/private/GnmW6C6Gn7c9kv_fgFg9msLB0gS4d-guRqihRh7Q-1bBH45OKqJOuoSNp0w69Z6E/crowdconnected-ips-sources"
+binary "https://cdn.filesend.jp/private/vxuzF0hwEjpQ2HSOCtzPUpija8-pMYbOvwwZ0y40j_ljh1PHOsJkhPxSZC53g0Xj/crowdconnected-shared-sources"

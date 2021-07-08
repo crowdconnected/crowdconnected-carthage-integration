@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,38 @@
 		AA281AFA2696E33900F7A285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA281AF92696E33900F7A285 /* ContentView.swift */; };
 		AA281AFC2696E33C00F7A285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA281AFB2696E33C00F7A285 /* Assets.xcassets */; };
 		AA281AFF2696E33C00F7A285 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA281AFE2696E33C00F7A285 /* Preview Assets.xcassets */; };
+		AA281B08269754BD00F7A285 /* CrowdConnectedCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B07269754BD00F7A285 /* CrowdConnectedCore.xcframework */; };
+		AA281B09269754BD00F7A285 /* CrowdConnectedCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B07269754BD00F7A285 /* CrowdConnectedCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA281B0C269754C000F7A285 /* CrowdConnectedIPS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B0B269754C000F7A285 /* CrowdConnectedIPS.xcframework */; };
+		AA281B0D269754C000F7A285 /* CrowdConnectedIPS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B0B269754C000F7A285 /* CrowdConnectedIPS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA281B0F269754C200F7A285 /* CrowdConnectedShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B0E269754C200F7A285 /* CrowdConnectedShared.xcframework */; };
+		AA281B10269754C200F7A285 /* CrowdConnectedShared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B0E269754C200F7A285 /* CrowdConnectedShared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA281B12269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B11269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework */; };
+		AA281B13269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B11269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA281B15269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B14269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework */; };
+		AA281B16269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B14269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA281B18269754D000F7A285 /* AWSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B17269754D000F7A285 /* AWSCore.xcframework */; };
+		AA281B19269754D000F7A285 /* AWSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B17269754D000F7A285 /* AWSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA281B0A269754BD00F7A285 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA281B16269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework in Embed Frameworks */,
+				AA281B13269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework in Embed Frameworks */,
+				AA281B19269754D000F7A285 /* AWSCore.xcframework in Embed Frameworks */,
+				AA281B0D269754C000F7A285 /* CrowdConnectedIPS.xcframework in Embed Frameworks */,
+				AA281B09269754BD00F7A285 /* CrowdConnectedCore.xcframework in Embed Frameworks */,
+				AA281B10269754C200F7A285 /* CrowdConnectedShared.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA281AF42696E33900F7A285 /* TestCarthageIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCarthageIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,12 @@
 		AA281AFB2696E33C00F7A285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA281AFE2696E33C00F7A285 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA281B002696E33C00F7A285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA281B07269754BD00F7A285 /* CrowdConnectedCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedCore.xcframework; path = Carthage/Build/CrowdConnectedCore.xcframework; sourceTree = "<group>"; };
+		AA281B0B269754C000F7A285 /* CrowdConnectedIPS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedIPS.xcframework; path = Carthage/Build/CrowdConnectedIPS.xcframework; sourceTree = "<group>"; };
+		AA281B0E269754C200F7A285 /* CrowdConnectedShared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedShared.xcframework; path = Carthage/Build/CrowdConnectedShared.xcframework; sourceTree = "<group>"; };
+		AA281B11269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSCognitoIdentityProvider.xcframework; path = Carthage/Build/AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
+		AA281B14269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSCognitoIdentityProviderASF.xcframework; path = Carthage/Build/AWSCognitoIdentityProviderASF.xcframework; sourceTree = "<group>"; };
+		AA281B17269754D000F7A285 /* AWSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSCore.xcframework; path = Carthage/Build/AWSCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +64,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA281B15269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework in Frameworks */,
+				AA281B12269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework in Frameworks */,
+				AA281B18269754D000F7A285 /* AWSCore.xcframework in Frameworks */,
+				AA281B0C269754C000F7A285 /* CrowdConnectedIPS.xcframework in Frameworks */,
+				AA281B08269754BD00F7A285 /* CrowdConnectedCore.xcframework in Frameworks */,
+				AA281B0F269754C200F7A285 /* CrowdConnectedShared.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +81,7 @@
 			children = (
 				AA281AF62696E33900F7A285 /* TestCarthageIntegration */,
 				AA281AF52696E33900F7A285 /* Products */,
+				AA281B06269754BD00F7A285 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +113,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AA281B06269754BD00F7A285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA281B17269754D000F7A285 /* AWSCore.xcframework */,
+				AA281B14269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework */,
+				AA281B11269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework */,
+				AA281B0E269754C200F7A285 /* CrowdConnectedShared.xcframework */,
+				AA281B0B269754C000F7A285 /* CrowdConnectedIPS.xcframework */,
+				AA281B07269754BD00F7A285 /* CrowdConnectedCore.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +136,7 @@
 				AA281AF02696E33900F7A285 /* Sources */,
 				AA281AF12696E33900F7A285 /* Frameworks */,
 				AA281AF22696E33900F7A285 /* Resources */,
+				AA281B0A269754BD00F7A285 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
