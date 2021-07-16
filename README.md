@@ -4,9 +4,9 @@
 In your `Carfile` file add the following:
 ```
 github "aws-amplify/aws-sdk-ios"
-binary "https://cdn.filesend.jp/private/-nKfp_Koo2D6_mWzCneM3x-FljLWE5Izk9EkEYYU_ZM_bLR3fo4MjrKYryWtWwMv/crowdconnected-core-sources"
-binary "https://cdn.filesend.jp/private/GnmW6C6Gn7c9kv_fgFg9msLB0gS4d-guRqihRh7Q-1bBH45OKqJOuoSNp0w69Z6E/crowdconnected-ips-sources"
-binary "https://cdn.filesend.jp/private/vxuzF0hwEjpQ2HSOCtzPUpija8-pMYbOvwwZ0y40j_ljh1PHOsJkhPxSZC53g0Xj/crowdconnected-shared-sources"
+binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-core-sources"
+binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-ips-sources"
+binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-shared-sources"
 ```
 
 ### Update carthage dependencies
@@ -102,17 +102,3 @@ For stopping the location updates stream, either deinitialize the `locationProvi
 ```
 CrowdConnected.shared.delegate = nil
 ```
-
-## Notes:
-
-A JSON containing the paths for all our SDK binaries must be hosted by us. I tried using Github for this, but due to authentication (even with public repos) it won’t work. It must de a direct-download link and to test Carthage distribution I used a free service I found (FileSend.jp). 
-You can see the 3 sources below. Anyway, we need to find another way to host these files since we surely don’t want to rely on this service and would also prefer to have a shorter, more meaningful link.
-
-## Core
-https://cdn.filesend.jp/private/https://cdn.filesend.jp/private/-nKfp_Koo2D6_mWzCneM3x-FljLWE5Izk9EkEYYU_ZM_bLR3fo4MjrKYryWtWwMv/crowdconnected-core-sources
-
-## IPS
-https://cdn.filesend.jp/private/GnmW6C6Gn7c9kv_fgFg9msLB0gS4d-guRqihRh7Q-1bBH45OKqJOuoSNp0w69Z6E/crowdconnected-ips-sources
-
-## Shared
-https://cdn.filesend.jp/private/vxuzF0hwEjpQ2HSOCtzPUpija8-pMYbOvwwZ0y40j_ljh1PHOsJkhPxSZC53g0Xj/crowdconnected-shared-sources
