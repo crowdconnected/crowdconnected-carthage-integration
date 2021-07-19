@@ -13,7 +13,7 @@ struct TestCarthageIntegrationApp: App {
 
     init() {
         CrowdConnectedIPS.activate()
-        CrowdConnected.shared.start(appKey: "testkey", token: "iosuser", secret: "Ea80e182$") { deviceId, error in
+        CrowdConnected.shared.start(appKey: "YOUR_APP_KEY", token: "YOUR_TOKEN", secret: "YOUR_SECRET") { deviceId, error in
             guard let id = deviceId else {
                 return
             }
