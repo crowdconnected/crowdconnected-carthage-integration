@@ -13,8 +13,6 @@ struct TestCarthageIntegrationApp: App {
 
     let locationProvider = LocationProvider()
     let locationManager = CLLocationManager()
-
-//    let testBT = TestBT()
     
     init() {
         CrowdConnectedIPS.activate()
@@ -23,10 +21,11 @@ struct TestCarthageIntegrationApp: App {
 
         CrowdConnected.shared.start(appKey: "testkey", token: "iosuser", secret: "Ea80e182$") { deviceId, error in
             guard let id = deviceId else {
+                // Check the error and make sure to start the library correctly
                 return
             }
 
-            print(id)
+            // Library started successfully
         }
 
         CrowdConnected.shared.delegate = locationProvider
@@ -42,6 +41,6 @@ struct TestCarthageIntegrationApp: App {
 
 class LocationProvider: CrowdConnectedDelegate {
     func didUpdateLocation(_ locations: [Location]) {
-        print("Got location update")
+        // Use the location updates as you need
     }
 }
