@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Bluetooth permission so SAIL can provide you indoor navigation.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Enable location permission so SAIL can provide you indoor navigation.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Enable location permission when using the app so SAIL can provide you indoor navigation.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -27,6 +33,10 @@
 	</dict>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchScreen</key>
 	<dict/>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -46,7 +56,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Enable location permission when using the app so SAIL can provide you indoor navigation.</string>
 </dict>
 </plist>

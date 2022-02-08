@@ -23,6 +23,10 @@
 		AA281B16269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B14269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA281B18269754D000F7A285 /* AWSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B17269754D000F7A285 /* AWSCore.xcframework */; };
 		AA281B19269754D000F7A285 /* AWSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B17269754D000F7A285 /* AWSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA9C865027B192410094FD9A /* CrowdConnectedGeo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */; };
+		AA9C865127B192410094FD9A /* CrowdConnectedGeo.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA9C865327B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C865227B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework */; };
+		AA9C865427B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C865227B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,8 +40,10 @@
 				AA281B13269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework in Embed Frameworks */,
 				AA281B19269754D000F7A285 /* AWSCore.xcframework in Embed Frameworks */,
 				AA281B0D269754C000F7A285 /* CrowdConnectedIPS.xcframework in Embed Frameworks */,
+				AA9C865127B192410094FD9A /* CrowdConnectedGeo.xcframework in Embed Frameworks */,
 				AA281B09269754BD00F7A285 /* CrowdConnectedCore.xcframework in Embed Frameworks */,
 				AA281B10269754C200F7A285 /* CrowdConnectedShared.xcframework in Embed Frameworks */,
+				AA9C865427B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +63,8 @@
 		AA281B11269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSCognitoIdentityProvider.xcframework; path = Carthage/Build/AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
 		AA281B14269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSCognitoIdentityProviderASF.xcframework; path = Carthage/Build/AWSCognitoIdentityProviderASF.xcframework; sourceTree = "<group>"; };
 		AA281B17269754D000F7A285 /* AWSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSCore.xcframework; path = Carthage/Build/AWSCore.xcframework; sourceTree = "<group>"; };
+		AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedGeo.xcframework; path = Carthage/Build/CrowdConnectedGeo.xcframework; sourceTree = "<group>"; };
+		AA9C865227B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedCoreBluetooth.xcframework; path = Carthage/Build/CrowdConnectedCoreBluetooth.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +76,10 @@
 				AA281B12269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework in Frameworks */,
 				AA281B18269754D000F7A285 /* AWSCore.xcframework in Frameworks */,
 				AA281B0C269754C000F7A285 /* CrowdConnectedIPS.xcframework in Frameworks */,
+				AA9C865027B192410094FD9A /* CrowdConnectedGeo.xcframework in Frameworks */,
 				AA281B08269754BD00F7A285 /* CrowdConnectedCore.xcframework in Frameworks */,
 				AA281B0F269754C200F7A285 /* CrowdConnectedShared.xcframework in Frameworks */,
+				AA9C865327B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +126,8 @@
 		AA281B06269754BD00F7A285 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA9C865227B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework */,
+				AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */,
 				AA281B17269754D000F7A285 /* AWSCore.xcframework */,
 				AA281B14269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework */,
 				AA281B11269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework */,
@@ -328,6 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestCarthageIntegration/Preview Content\"";
 				DEVELOPMENT_TEAM = 67K9GDZYLG;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestCarthageIntegration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -350,6 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestCarthageIntegration/Preview Content\"";
 				DEVELOPMENT_TEAM = 67K9GDZYLG;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestCarthageIntegration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
