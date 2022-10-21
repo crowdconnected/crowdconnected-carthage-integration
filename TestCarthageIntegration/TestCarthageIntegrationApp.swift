@@ -1,34 +1,40 @@
 //  Created by TCode on 8/7/21.
 
 import SwiftUI
+import CoreLocation
+import CrowdConnectedShared
 import CrowdConnectedCore
 import CrowdConnectedIPS
-import CrowdConnectedGeo
 import CrowdConnectedCoreBluetooth
-
-import CoreLocation
+import CrowdConnectedGeo
 
 @main
 struct TestCarthageIntegrationApp: App {
-
     let locationProvider = LocationProvider()
     let locationManager = CLLocationManager()
     
     init() {
         CrowdConnectedIPS.activate()
-        CrowdConnectedGeo.activate()
         CrowdConnectedCoreBluetooth.activate()
+        CrowdConnectedGeo.activate()
 
-        CrowdConnected.shared.start(appKey: "testkey", token: "iosuser", secret: "Ea80e182$") { deviceId, error in
-            guard let id = deviceId else {
-                // Check the error and make sure to start the library correctly
+        CrowdConnected.shared.start(appKey: "appkey", token: "iosuser", secret: "Ea80e182$") { deviceId, error in
+            if let errorMessage = error {
+                print("⚠️ CrowdConnected SDK has failed to start. Error: \(errorMessage)")
                 return
             }
-
-            // Library started successfully
+            if let deviceId = deviceId {
+                print("✅ CrowdConnected SDK has started with device ID \(deviceId)")
+                return
+            }
+            print("❌ CrowdConnected SDK failed to start. Invalid callback as no error and no device ID were provided.")
         }
 
         CrowdConnected.shared.delegate = locationProvider
+        CrowdConnected.shared.setAlias(key: "", value: "")
+        CrowdConnected.shared.activateSDKBackgroundRefresh()
+        CrowdConnected.shared.scheduleRefresh()
+
         locationManager.requestWhenInUseAuthorization()
     }
 
@@ -41,6 +47,10 @@ struct TestCarthageIntegrationApp: App {
 
 class LocationProvider: CrowdConnectedDelegate {
     func didUpdateLocation(_ locations: [Location]) {
-        // Use the location updates as you need
+        guard let location = locations.first else {
+            print("📍 CrowdConnected SDK has triggered an update with no locations")
+            return
+        }
+        print("📍 New location update from CrowdConnected SDK. (\(location.latitude),\(location.longitude))")
     }
 }
