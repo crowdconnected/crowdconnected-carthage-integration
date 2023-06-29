@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA058139290840960098CBA4 /* AWSKinesis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA058138290840960098CBA4 /* AWSKinesis.xcframework */; };
+		AA05813A290840960098CBA4 /* AWSKinesis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA058138290840960098CBA4 /* AWSKinesis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA281AF82696E33900F7A285 /* TestCarthageIntegrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA281AF72696E33900F7A285 /* TestCarthageIntegrationApp.swift */; };
 		AA281AFA2696E33900F7A285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA281AF92696E33900F7A285 /* ContentView.swift */; };
 		AA281AFC2696E33C00F7A285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA281AFB2696E33C00F7A285 /* Assets.xcassets */; };
@@ -39,6 +41,7 @@
 				AA281B16269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework in Embed Frameworks */,
 				AA281B13269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework in Embed Frameworks */,
 				AA281B19269754D000F7A285 /* AWSCore.xcframework in Embed Frameworks */,
+				AA05813A290840960098CBA4 /* AWSKinesis.xcframework in Embed Frameworks */,
 				AA281B0D269754C000F7A285 /* CrowdConnectedIPS.xcframework in Embed Frameworks */,
 				AA9C865127B192410094FD9A /* CrowdConnectedGeo.xcframework in Embed Frameworks */,
 				AA281B09269754BD00F7A285 /* CrowdConnectedCore.xcframework in Embed Frameworks */,
@@ -51,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA058138290840960098CBA4 /* AWSKinesis.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSKinesis.xcframework; path = Carthage/Build/AWSKinesis.xcframework; sourceTree = "<group>"; };
 		AA281AF42696E33900F7A285 /* TestCarthageIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCarthageIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA281AF72696E33900F7A285 /* TestCarthageIntegrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCarthageIntegrationApp.swift; sourceTree = "<group>"; };
 		AA281AF92696E33900F7A285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 				AA281B15269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework in Frameworks */,
 				AA281B12269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework in Frameworks */,
 				AA281B18269754D000F7A285 /* AWSCore.xcframework in Frameworks */,
+				AA058139290840960098CBA4 /* AWSKinesis.xcframework in Frameworks */,
 				AA281B0C269754C000F7A285 /* CrowdConnectedIPS.xcframework in Frameworks */,
 				AA9C865027B192410094FD9A /* CrowdConnectedGeo.xcframework in Frameworks */,
 				AA281B08269754BD00F7A285 /* CrowdConnectedCore.xcframework in Frameworks */,
@@ -126,6 +131,7 @@
 		AA281B06269754BD00F7A285 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA058138290840960098CBA4 /* AWSKinesis.xcframework */,
 				AA9C865227B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework */,
 				AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */,
 				AA281B17269754D000F7A285 /* AWSCore.xcframework */,
