@@ -1,6 +1,6 @@
 github "aws-amplify/aws-sdk-ios"
-binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-core-sources" == 1.5.0
-binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-ips-sources" == 1.5.0
-binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-shared-sources" == 1.5.0
-binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-geo-sources" == 1.5.0
-binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-corebluetooth-sources" == 1.5.0
+binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-core-sources" == 1.6.1
+binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-ips-sources" == 1.6.1
+binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-shared-sources" == 1.6.1
+binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-geo-sources" == 1.6.1
+binary "https://crowdconnected-public-maven.s3.eu-west-1.amazonaws.com/iOSSources/crowdconnected-corebluetooth-sources" == 1.6.1
