@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		AA281B16269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B14269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA281B18269754D000F7A285 /* AWSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B17269754D000F7A285 /* AWSCore.xcframework */; };
 		AA281B19269754D000F7A285 /* AWSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B17269754D000F7A285 /* AWSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA2F2ECB2BC546EF006404EF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA2F2ECA2BC546EF006404EF /* PrivacyInfo.xcprivacy */; };
 		AA9C865027B192410094FD9A /* CrowdConnectedGeo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */; };
 		AA9C865127B192410094FD9A /* CrowdConnectedGeo.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA9C865327B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C865227B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework */; };
@@ -67,6 +68,7 @@
 		AA281B11269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSCognitoIdentityProvider.xcframework; path = Carthage/Build/AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
 		AA281B14269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSCognitoIdentityProviderASF.xcframework; path = Carthage/Build/AWSCognitoIdentityProviderASF.xcframework; sourceTree = "<group>"; };
 		AA281B17269754D000F7A285 /* AWSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AWSCore.xcframework; path = Carthage/Build/AWSCore.xcframework; sourceTree = "<group>"; };
+		AA2F2ECA2BC546EF006404EF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedGeo.xcframework; path = Carthage/Build/CrowdConnectedGeo.xcframework; sourceTree = "<group>"; };
 		AA9C865227B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedCoreBluetooth.xcframework; path = Carthage/Build/CrowdConnectedCoreBluetooth.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				AA281AF72696E33900F7A285 /* TestCarthageIntegrationApp.swift */,
+				AA2F2ECA2BC546EF006404EF /* PrivacyInfo.xcprivacy */,
 				AA281AF92696E33900F7A285 /* ContentView.swift */,
 				AA281AFB2696E33C00F7A285 /* Assets.xcassets */,
 				AA281B002696E33C00F7A285 /* Info.plist */,
@@ -202,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2F2ECB2BC546EF006404EF /* PrivacyInfo.xcprivacy in Resources */,
 				AA281AFF2696E33C00F7A285 /* Preview Assets.xcassets in Resources */,
 				AA281AFC2696E33C00F7A285 /* Assets.xcassets in Resources */,
 			);
@@ -356,6 +360,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.crowdconnected.TestCarthageIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,6 +386,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.crowdconnected.TestCarthageIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
