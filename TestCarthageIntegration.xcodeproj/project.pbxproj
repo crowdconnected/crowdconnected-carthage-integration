@@ -26,6 +26,11 @@
 		AA281B18269754D000F7A285 /* AWSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B17269754D000F7A285 /* AWSCore.xcframework */; };
 		AA281B19269754D000F7A285 /* AWSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA281B17269754D000F7A285 /* AWSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA2F2ECB2BC546EF006404EF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA2F2ECA2BC546EF006404EF /* PrivacyInfo.xcprivacy */; };
+		AA462C012CD25ED800F0727C /* AWSACM in Frameworks */ = {isa = PBXBuildFile; productRef = AA462C002CD25ED800F0727C /* AWSACM */; };
+		AA462C032CD25ED800F0727C /* AWSACMPCA in Frameworks */ = {isa = PBXBuildFile; productRef = AA462C022CD25ED800F0727C /* AWSACMPCA */; };
+		AA462C052CD25ED800F0727C /* AWSAPIGateway in Frameworks */ = {isa = PBXBuildFile; productRef = AA462C042CD25ED800F0727C /* AWSAPIGateway */; };
+		AA462C072CD25ED800F0727C /* AWSARCZonalShift in Frameworks */ = {isa = PBXBuildFile; productRef = AA462C062CD25ED800F0727C /* AWSARCZonalShift */; };
+		AA462C092CD25ED800F0727C /* AWSAccessAnalyzer in Frameworks */ = {isa = PBXBuildFile; productRef = AA462C082CD25ED800F0727C /* AWSAccessAnalyzer */; };
 		AA9C865027B192410094FD9A /* CrowdConnectedGeo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */; };
 		AA9C865127B192410094FD9A /* CrowdConnectedGeo.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C864F27B192410094FD9A /* CrowdConnectedGeo.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA9C865327B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C865227B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework */; };
@@ -78,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA462C072CD25ED800F0727C /* AWSARCZonalShift in Frameworks */,
+				AA462C052CD25ED800F0727C /* AWSAPIGateway in Frameworks */,
+				AA462C032CD25ED800F0727C /* AWSACMPCA in Frameworks */,
+				AA462C012CD25ED800F0727C /* AWSACM in Frameworks */,
 				AA281B15269754CD00F7A285 /* AWSCognitoIdentityProviderASF.xcframework in Frameworks */,
 				AA281B12269754CB00F7A285 /* AWSCognitoIdentityProvider.xcframework in Frameworks */,
 				AA281B18269754D000F7A285 /* AWSCore.xcframework in Frameworks */,
@@ -86,6 +95,7 @@
 				AA9C865027B192410094FD9A /* CrowdConnectedGeo.xcframework in Frameworks */,
 				AA281B08269754BD00F7A285 /* CrowdConnectedCore.xcframework in Frameworks */,
 				AA281B0F269754C200F7A285 /* CrowdConnectedShared.xcframework in Frameworks */,
+				AA462C092CD25ED800F0727C /* AWSAccessAnalyzer in Frameworks */,
 				AA9C865327B192470094FD9A /* CrowdConnectedCoreBluetooth.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +174,13 @@
 			dependencies = (
 			);
 			name = TestCarthageIntegration;
+			packageProductDependencies = (
+				AA462C002CD25ED800F0727C /* AWSACM */,
+				AA462C022CD25ED800F0727C /* AWSACMPCA */,
+				AA462C042CD25ED800F0727C /* AWSAPIGateway */,
+				AA462C062CD25ED800F0727C /* AWSARCZonalShift */,
+				AA462C082CD25ED800F0727C /* AWSAccessAnalyzer */,
+			);
 			productName = TestCarthageIntegration;
 			productReference = AA281AF42696E33900F7A285 /* TestCarthageIntegration.app */;
 			productType = "com.apple.product-type.application";
@@ -191,6 +208,9 @@
 				Base,
 			);
 			mainGroup = AA281AEB2696E33900F7A285;
+			packageReferences = (
+				AA462BFF2CD25ED800F0727C /* XCRemoteSwiftPackageReference "aws-sdk-swift" */,
+			);
 			productRefGroup = AA281AF52696E33900F7A285 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -416,6 +436,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA462BFF2CD25ED800F0727C /* XCRemoteSwiftPackageReference "aws-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/awslabs/aws-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.30;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA462C002CD25ED800F0727C /* AWSACM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA462BFF2CD25ED800F0727C /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSACM;
+		};
+		AA462C022CD25ED800F0727C /* AWSACMPCA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA462BFF2CD25ED800F0727C /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSACMPCA;
+		};
+		AA462C042CD25ED800F0727C /* AWSAPIGateway */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA462BFF2CD25ED800F0727C /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSAPIGateway;
+		};
+		AA462C062CD25ED800F0727C /* AWSARCZonalShift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA462BFF2CD25ED800F0727C /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSARCZonalShift;
+		};
+		AA462C082CD25ED800F0727C /* AWSAccessAnalyzer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA462BFF2CD25ED800F0727C /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSAccessAnalyzer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA281AEC2696E33900F7A285 /* Project object */;
 }
