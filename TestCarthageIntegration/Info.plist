@@ -20,8 +20,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-    <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>Bluetooth permission so SAIL can provide you indoor navigation.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Bluetooth permission so SAIL can provide you indoor navigation.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Enable location permission so SAIL can provide you indoor navigation.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -35,6 +35,7 @@
 	<true/>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>bluetooth-central</string>
 		<string>location</string>
 	</array>
 	<key>UILaunchScreen</key>
